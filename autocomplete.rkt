@@ -23,25 +23,24 @@
     ("cw"  "(check-within (" ")  tolerance)")
     ("ce"  "(check-error (" ") )")
     ("df"  "(define (" ")\n  ())")
-    ("d"  "(define " ")")
+    ("d"   "(define " ")")
     ("t"   "true" "")
     ("f"   "false" "")
 
     ; custom design recipe:
-    ("hdr"  ";;
+    ("hdr" ";;
 ;; ***************************************************
 ;;    Raymond Li (studentID)
 ;;    CS 135 Fall 2020
 ;;    Assignment " ", Problem
 ;; ***************************************************
 ;;\n")
-    ("cmt"  ";;\n;; " "\n;;")
-    (";"  ";; " "")
-    (";;"  ";;   " "")
-    ("ppe"  ";; (" ") \n;; Examples:\n")
-    ("ctr"  ";; " ":  -> \n")
-    ("req"  ";; Requires: " "\n")
-    ("tst"  ";; Tests:\n" "")
+    ("cmt" ";;\n;; "       "\n;;")
+    ("l;"  ";;   "         "")
+    ("ppe" ";; ("          ") \n;; Examples:\n")
+    ("ctr" ";; "           ":  -> \n")
+    ("req" ";; Requires: " "\n")
+    ("tst" ";; Tests:\n"   "")
 
     #| Defaults from complete-word plugin of quickscript extras
     ("dsr"   "(define-syntax-rule (" ")\n  )")
