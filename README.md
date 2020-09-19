@@ -9,7 +9,8 @@ Various customizations for DrRacket to make life easier
 ## Racket Preferences
 ### Features
 - Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
-- All the features I find useful. The language is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
+- `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
+- In addition to the notable ones mentioned here, I enabled all the features I find useful. The language is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
 
 ### Installation
 - Unix: Put `racket-prefs.rktd` in `$HOME/.racket` and reload DrRacket
@@ -38,7 +39,7 @@ Various customizations for DrRacket to make life easier
 | req      | Requires             |
 | tst      | Tests                |
 
-- Ctrl+space trigger
+- `Ctrl+Space` trigger
 
 ### Installation
 This will be automated when I get around to the raco package.
@@ -51,7 +52,7 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 
 ### Usage:
 1. Type a shortcut
-2. Press Ctrl+<space>
+2. Press `Ctrl+Space`
 3. The shortcut will be replace with the long form
 
 ## Keybindings
