@@ -1,10 +1,16 @@
 # drracket-customization
 Various customizations for DrRacket to make life easier
 
-#### TODO: This repo WILL be made into a raco package when I don't have deadlines threatening to fail me out of CS.
 ## Disclaimers
 - **I am NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
 - **Though it may not be necessary in all cases, DrRacket should be restarted after most customizations to allow all changes to take effect.**
+
+## Acknowledgements
+- Autocomplete was adapted from *complete-word* in [Quickscript Extra](https://github.com/Metaxal/quickscript-extra)
+- Keybindings was adapted from [Racket-lang.org Documentation](https://docs.racket-lang.org/drracket/Keyboard_Shortcuts.html#%28part._defining-shortcuts%29)
+
+## TODO
+- Make this repo into a raco package when I ~~don't have deadlines threatening to fail me out of CS~~ have more time on my hands.
 
 ## Racket Preferences
 ### Features

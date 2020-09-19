@@ -1,8 +1,8 @@
 ;;
 ;; **************************************************************
-;;    Raymond Li <racket@raymond.li>
-;;    Code completion for Racket
-;;    Last updated 2020-09-18
+;;    Copyright (c) Raymond Li <racket@raymond.li> 2020
+;;    Code completion for DrRacket
+;;    Last updated 2020-09-19
 ;;    Modified from complete-word from quickscript extras repo
 ;; **************************************************************
 ;;
@@ -32,7 +32,7 @@
 ;; ***************************************************
 ;;    Raymond Li (studentID)
 ;;    CS 135 Fall 2020
-;;    Assignment " ", Problem 
+;;    Assignment " ", Problem
 ;; ***************************************************
 ;;\n")
     ("cmt"  ";;\n;; " "\n;;")
@@ -42,7 +42,7 @@
     ("ctr"  ";; " ":  -> \n")
     ("req"  ";; Requires: " "\n")
     ("tst"  ";; Tests:\n" "")
-    
+
     #| Defaults from complete-word plugin of quickscript extras
     ("dsr"   "(define-syntax-rule (" ")\n  )")
     ("ds"    "(define-syntax " "\n  )")
@@ -54,7 +54,7 @@
     ("wh"    "(with-handlers ([exn:" "])\n  )")
     ("wiff"  "(with-input-from-file " "\n  (λ _ ))")
     ("wotf"  "(with-output-to-file " " #:exists 'replace\n  (λ _ ))")
-    
+
     ; slideshow:
     ("slide"    "(slide #:title \"" "\"\n       )")
     ("item"     "@item{" "}")
@@ -65,13 +65,13 @@
 
 (define-script autocomplete
   #:label "Autocomplete"
-  #:shortcut #\ 
+  #:shortcut #\
   #:shortcut-prefix (ctl)
-  (λ (s #:editor ed) 
-    (define pos (send ed get-end-position)) 
+  (λ (s #:editor ed)
+    (define pos (send ed get-end-position))
     (define str
-      (send ed get-text 
-            (send ed get-backward-sexp pos) 
+      (send ed get-text
+            (send ed get-backward-sexp pos)
             pos))
     (define str-ext (dict-ref words str #f))
     (define left (if (list? str-ext) (first str-ext) str-ext))
@@ -86,7 +86,7 @@
         (send ed set-position ipos))
       (send ed end-edit-sequence))
     #f))
-  
+
 #;(
    item
    para
