@@ -2,7 +2,7 @@
 Various customizations for DrRacket to make life easier
 
 #### TODO: This repo WILL be made into a raco package when I don't have deadlines threatening to fail me out of CS.
-##Disclaimers
+## Disclaimers
 - **I am NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
 - **Though it may not be necessary in all cases, DrRacket should be restarted after most customizations to allow all changes to take effect.**
 
@@ -19,6 +19,7 @@ Various customizations for DrRacket to make life easier
 ## Autocomplete
 ### Features:
 - Completion for the following:
+
 | Shortcut | Long form            |
 |----------|----------------------|
 | cx       | check-expect         |
@@ -56,6 +57,7 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 ## Keybindings
 ### Features
 - Current custom keybindings that I'm used to and have implemented are:
+
 | Keybinding   | What it does     | DrRacket default |
 |--------------|------------------|------------------|
 | Alt+R        | Run the program  | Ctrl+R or F5     |
