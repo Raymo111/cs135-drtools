@@ -221,7 +221,7 @@
  (plt:framework-pref:framework:fixup-open-parens #t)
  (plt:framework-pref:color-scheme-entry:drracket:check-syntax:imported #hash((white-on-black . (base base (0 0 0) (1 1 1) #f base (229 206 0) (0.0 0.0 0.0) 0 1 italic base #t #f base base))))
  (plt:framework-pref:color-scheme-entry:drracket:check-syntax:lexically-bound #hash((white-on-black . (base base (0 0 0) (1 1 1) #f base (255 128 244) (0.0 0.0 0.0) 0 1 italic base #t #f base base))))
- (plt:framework-pref:color-scheme-entry:plt:htdp:test-coverage-off #hash((white-on-black . (base base (255 128 128) (0 0 0) #f base (0 0 255) (0.0 0.0 0.0) 0 1 italic base #t #f base base))))
+ (plt:framework-pref:color-scheme-entry:plt:htdp:test-coverage-off #hash())
  (plt:framework-pref:color-scheme-entry:drracket:read-eval-print-loop:value-color #hash((white-on-black . (base base (0 0 0) (1 1 1) #f base (62 255 13) (0.0 0.0 0.0) 0 1 italic base #t #f base base))))
  (plt:framework-pref:color-scheme-entry:drracket:read-eval-print-loop:out-color #hash((white-on-black . (base base (0 0 0) (1 1 1) #f base (255 128 0) (0.0 0.0 0.0) 0 1 italic base #t #f base base))))
  (plt:framework-pref:framework:backup-files? #t)
