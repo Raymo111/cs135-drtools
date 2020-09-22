@@ -44,8 +44,8 @@
     ("lox"  ";; (listof-X-template lox) PURPOSE" "
 ;; Examples:
 (check-expect (listof-X-template empty) Answer)
-(check-expect (listof-X-template (cons X empty)) Answer)\n\n
-;; listof-X-template: (listof X) -> 
+(check-expect (listof-X-template (cons  empty)) Answer)\n\n
+;; listof-X-template: (listof ) -> 
 (define (listof-X-template lox) ...
   (cond [(empty? lox) ...]
         [(cons? lox) ... (first lox)
