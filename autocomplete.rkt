@@ -41,7 +41,16 @@
     ("ctr" ";; "           ":  -> \n")
     ("req" ";; Requires: " "\n")
     ("tst" ";; Tests:\n"   "")
-
+    ("lox"  ";; (listof-X-template lox) PURPOSE" "
+;; Examples:
+(check-expect (listof-X-template empty) Answer)
+(check-expect (listof-X-template (cons X empty)) Answer)\n\n
+;; listof-X-template: (listof X) -> 
+(define (listof-X-template lox) ...
+  (cond [(empty? lox) ...]
+        [(cons? lox) ... (first lox)
+                     ... (listof-X-template (rest lox)) ...]))\n
+;; Tests")
     #| Defaults from complete-word plugin of quickscript extras
     ("dsr"   "(define-syntax-rule (" ")\n  )")
     ("ds"    "(define-syntax " "\n  )")
