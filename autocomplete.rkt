@@ -2,7 +2,7 @@
 ;; **************************************************************
 ;;    Copyright (c) Raymond Li <racket@raymond.li> 2020
 ;;    Code completion for DrRacket
-;;    Last updated 2020-09-19
+;;    Last updated 2020-09-22
 ;;    Modified from complete-word from quickscript extras repo
 ;; **************************************************************
 ;;
@@ -41,10 +41,10 @@
     ("ctr" ";; "           ":  -> \n")
     ("req" ";; Requires: " "\n")
     ("tst" ";; Tests:\n"   "")
-    ("lox"  ";; (listof-X-template lox) PURPOSE" "
+    ("lox"  ";; (listof-X-template lox) " "
 ;; Examples:
-(check-expect (listof-X-template empty) Answer)
-(check-expect (listof-X-template (cons  empty)) Answer)\n\n
+(check-expect (listof-X-template empty) )
+(check-expect (listof-X-template (cons  empty)) )\n\n
 ;; listof-X-template: (listof ) -> 
 (define (listof-X-template lox) ...
   (cond [(empty? lox) ...]
