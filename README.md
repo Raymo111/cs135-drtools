@@ -38,12 +38,12 @@ Various customizations for DrRacket to make life easier
 | f        | false                |
 | hdr      | file header          |
 | cmt      | comment              |
-| ;        | `;; `                |
-| ;;       | `;;   `              |
+| l;       | `;;   `              |
 | ppe      | Purpose and examples |
 | ctr      | Contract             |
 | req      | Requires             |
 | tst      | Tests                |
+| lox      | List-of-X Template   |
 
 - `Ctrl+Space` trigger
 
