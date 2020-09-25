@@ -54,11 +54,11 @@
     ("nel"  ";; (ne-listof-X-template nelox) " "
 ;; Examples:
 (check-expect (ne-listof-X-template (cons  empty) )
-(check-expect (listof-X-template (cons  (cons  empty))) )\n\n
+(check-expect (nelistof-X-template (cons  (cons  empty))) )\n\n
 ;; ne-listof-X-template: (ne-listof ) -> 
 (define (ne-listof-X-template nelox) ...
   (cond [(empty? (rest nelox)) (... (first nelox))]
-        [else (... (first lox)
+        [else (... (first nelox)
                    (ne-listof-X-template (rest nelox)))]))\n
 ;; Tests")
     #| Defaults from complete-word plugin of quickscript extras
