@@ -48,5 +48,20 @@
          (loop i))]
       [else #f])))
 
+(define (rebind key command)
+  (keybinding
+   key
+   (λ (ed evt)
+     (send (send ed get-keymap) call-function
+           command ed evt #t))))
+
 (menu-bind "m:r" "Run")
 (menu-bind ":?:s:c:F" "Reindent All")
+(menu-bind "c:h" "Show Replace")
+(menu-bind ":?:s:c:R" "Replace All")
+(menu-bind "c:/" "Comment Out with Semicolons")
+
+(rebind "c:backspace" "backward-kill-word")
+(rebind "c:del" "kill-word")
+(rebind "m:up" "shift-focus")
+(rebind "m:down" "shift-focus")

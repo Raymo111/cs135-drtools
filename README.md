@@ -65,10 +65,16 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 ### Features
 - Current custom keybindings that I'm used to and have implemented are:
 
-| Keybinding   | What it does     | DrRacket default |
-|--------------|------------------|------------------|
-| Alt+R        | Run the program  | Ctrl+R or F5     |
-| Ctrl+Shift+F | Indent all lines | Ctrl+I           |
+| Keybinding     | What it does                                        | DrRacket default |
+|----------------|-----------------------------------------------------|------------------|
+| Alt+R          | Run the program                                     | Ctrl+R or F5     |
+| Ctrl+Shift+F   | Indent all lines                                    | Ctrl+I           |
+| Ctrl+H         | Show Replace                                        | Ctrl+Shift+R     |
+| Ctrl+Shift+R   | Replace All                                         | *None*           |
+| Ctrl+/         | Comment out line with `;`                           | *None*           |
+| Ctrl+Backspace | Delete word left of cursor                          | Alt+Backspace    |
+| Ctrl+Delete    | Delete word right of cursor                         | Alt+Delete       |
+| Ctrl+Up/Down   | Switch between Interactions and Definitions Windows | Ctrl+F6          |
 
 ### Installation
-Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. New keybindings will be automatically applied, but DrRacket needs to be restarted for old keybindings to be wiped.
+Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. DrRacket needs to be restarted for keybindings to be updated.
