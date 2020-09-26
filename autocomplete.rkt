@@ -2,7 +2,7 @@
 ;; **************************************************************
 ;;    Copyright (c) Raymond Li <racket@raymond.li> 2020
 ;;    Code completion for DrRacket
-;;    Last updated 2020-09-19
+;;    Last updated 2020-09-25
 ;;    Modified from complete-word from quickscript extras repo
 ;; **************************************************************
 ;;
@@ -32,7 +32,7 @@
 ;; ***************************************************
 ;;    Raymond Li (studentID)
 ;;    CS 135 Fall 2020
-;;    Assignment " ", Problem
+;;    Assignment " ", Problem 
 ;; ***************************************************
 ;;\n")
     ("cmt" ";;\n;; "       "\n;;")
@@ -41,15 +41,25 @@
     ("ctr" ";; "           ":  -> \n")
     ("req" ";; Requires: " "\n")
     ("tst" ";; Tests:\n"   "")
-    ("lox"  ";; (listof-X-template lox) PURPOSE" "
+    ("lox"  ";; (listof-X-template lox) " "
 ;; Examples:
-(check-expect (listof-X-template empty) Answer)
-(check-expect (listof-X-template (cons X empty)) Answer)\n\n
-;; listof-X-template: (listof X) -> 
+(check-expect (listof-X-template empty) )
+(check-expect (listof-X-template (cons  empty)) )\n\n
+;; listof-X-template: (listof ) -> 
 (define (listof-X-template lox) ...
   (cond [(empty? lox) ...]
         [(cons? lox) ... (first lox)
                      ... (listof-X-template (rest lox)) ...]))\n
+;; Tests")
+    ("nel"  ";; (ne-listof-X-template nelox) " "
+;; Examples:
+(check-expect (ne-listof-X-template (cons  empty) )
+(check-expect (nelistof-X-template (cons  (cons  empty))) )\n\n
+;; ne-listof-X-template: (ne-listof ) -> 
+(define (ne-listof-X-template nelox) ...
+  (cond [(empty? (rest nelox)) (... (first nelox))]
+        [else (... (first nelox)
+                   (ne-listof-X-template (rest nelox)))]))\n
 ;; Tests")
     #| Defaults from complete-word plugin of quickscript extras
     ("dsr"   "(define-syntax-rule (" ")\n  )")
@@ -73,7 +83,7 @@
 
 (define-script autocomplete
   #:label "Autocomplete"
-  #:shortcut #\
+  #:shortcut #\ 
   #:shortcut-prefix (ctl)
   (λ (s #:editor ed)
     (define pos (send ed get-end-position))

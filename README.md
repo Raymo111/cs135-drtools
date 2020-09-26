@@ -9,8 +9,8 @@ Various customizations for DrRacket to make life easier
 - Autocomplete was adapted from *complete-word* in [Quickscript Extra](https://github.com/Metaxal/quickscript-extra)
 - Keybindings was adapted from [Racket-lang.org](https://docs.racket-lang.org/drracket/Keyboard_Shortcuts.html#%28part._defining-shortcuts%29) documentation
 
-## TODO
-- Make this repo into a raco package when I ~~don't have deadlines threatening to fail me out of CS~~ have more time on my hands.
+### Contributors
+- [Thomas Park](https://github.com/ThomasPark20)
 
 ## Racket Preferences
 ### Features
@@ -38,12 +38,12 @@ Various customizations for DrRacket to make life easier
 | f        | false                |
 | hdr      | file header          |
 | cmt      | comment              |
-| ;        | `;; `                |
-| ;;       | `;;   `              |
+| l;       | `;;   `              |
 | ppe      | Purpose and examples |
 | ctr      | Contract             |
 | req      | Requires             |
 | tst      | Tests                |
+| lox      | List-of-X Template   |
 
 - `Ctrl+Space` trigger
 
@@ -65,10 +65,16 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 ### Features
 - Current custom keybindings that I'm used to and have implemented are:
 
-| Keybinding   | What it does     | DrRacket default |
-|--------------|------------------|------------------|
-| Alt+R        | Run the program  | Ctrl+R or F5     |
-| Ctrl+Shift+F | Indent all lines | Ctrl+I           |
+| Keybinding     | What it does                                        | DrRacket default |
+|----------------|-----------------------------------------------------|------------------|
+| Alt+R          | Run the program                                     | Ctrl+R or F5     |
+| Ctrl+Shift+F   | Indent all lines                                    | Ctrl+I           |
+| Ctrl+H         | Show Replace                                        | Ctrl+Shift+R     |
+| Ctrl+Shift+R   | Replace All                                         | *None*           |
+| Ctrl+/         | Comment out line with `;`                           | *None*           |
+| Ctrl+Backspace | Delete word left of cursor                          | Alt+Backspace    |
+| Ctrl+Delete    | Delete word right of cursor                         | Alt+Delete       |
+| Ctrl+Up/Down   | Switch between Interactions and Definitions Windows | Ctrl+F6          |
 
 ### Installation
-Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. New keybindings will be automatically applied, but DrRacket needs to be restarted for old keybindings to be wiped.
+Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. DrRacket needs to be restarted for keybindings to be updated.
