@@ -65,3 +65,5 @@
 (rebind "c:del" "kill-word")
 (rebind "m:up" "shift-focus")
 (rebind "m:down" "shift-focus")
+(rebind "up" "put-previous-sexp")
+(rebind "down" "put-next-sexp")

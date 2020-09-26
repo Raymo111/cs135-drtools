@@ -1,5 +1,5 @@
 # drracket-customization
-Various customizations for DrRacket to make life easier
+Various customizations for DrRacket to make life easier.
 
 ## Disclaimers
 - **I am NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
@@ -10,6 +10,7 @@ Various customizations for DrRacket to make life easier
 - Keybindings was adapted from [Racket-lang.org](https://docs.racket-lang.org/drracket/Keyboard_Shortcuts.html#%28part._defining-shortcuts%29) documentation
 
 ### Contributors
+- Creator and Maintainer: [Raymond Li](https://github.com/Raymo111)
 - [Thomas Park](https://github.com/ThomasPark20)
 
 ## Racket Preferences
@@ -65,16 +66,21 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 ### Features
 - Current custom keybindings that I'm used to and have implemented are:
 
-| Keybinding     | What it does                                        | DrRacket default |
-|----------------|-----------------------------------------------------|------------------|
-| Alt+R          | Run the program                                     | Ctrl+R or F5     |
-| Ctrl+Shift+F   | Indent all lines                                    | Ctrl+I           |
-| Ctrl+H         | Show Replace                                        | Ctrl+Shift+R     |
-| Ctrl+Shift+R   | Replace All                                         | *None*           |
-| Ctrl+/         | Comment out line with `;`                           | *None*           |
-| Ctrl+Backspace | Delete word left of cursor                          | Alt+Backspace    |
-| Ctrl+Delete    | Delete word right of cursor                         | Alt+Delete       |
-| Ctrl+Up/Down   | Switch between Interactions and Definitions Windows | Ctrl+F6          |
+| Keybinding     | What it does                                      | DrRacket default |
+|----------------|---------------------------------------------------|------------------|
+| Alt+R          | Run the program                                   | Ctrl+R or F5     |
+| Ctrl+Shift+F   | Indent all lines                                  | Ctrl+I           |
+| Ctrl+H         | Show Replace                                      | Ctrl+Shift+R     |
+| Ctrl+Shift+R   | Replace All                                       | *None*           |
+| Ctrl+/         | Comment out line with `;`                         | *None*           |
+| Ctrl+Backspace | Delete word left of cursor                        | Alt+Backspace    |
+| Ctrl+Delete    | Delete word right of cursor                       | Alt+Delete       |
+| Ctrl+Up/Down   | Switch between Interactions and Definitions panes | Ctrl+F6          |
+| Up             | Previous command in Interactions panes            | Ctrl+up          |
+| Down           | Next command in Interactions panes                | Ctrl+down        |
 
 ### Installation
 Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. DrRacket needs to be restarted for keybindings to be updated.
+
+### Known issues
+Up/Down messes up multi-line inputs in the interactions window. I've chosen to leave this in because multiline interactions input that needs to be edited is uncommon and can simply be navigated via a mouse or Ctrl+Left/Right, whereas the terminal/shell/console-like up for previous command is used more often. Users that are unused to this or require multiline interactions input navigation can comment out the last two lines of the file, while I come up with a better way to implement this.
