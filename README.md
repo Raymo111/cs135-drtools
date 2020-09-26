@@ -76,11 +76,15 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 | Ctrl+Backspace | Delete word left of cursor                        | Alt+Backspace    |
 | Ctrl+Delete    | Delete word right of cursor                       | Alt+Delete       |
 | Ctrl+Up/Down   | Switch between Interactions and Definitions panes | Ctrl+F6          |
+<!--
 | Up             | Previous command in Interactions panes            | Ctrl+up          |
 | Down           | Next command in Interactions panes                | Ctrl+down        |
+-->
 
 ### Installation
 Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. DrRacket needs to be restarted for keybindings to be updated.
 
+<!--
 ### Known issues
 Up/Down messes up multi-line inputs in the interactions window. I've chosen to leave this in because multiline interactions input that needs to be edited is uncommon and can simply be navigated via a mouse or Ctrl+Left/Right, whereas the terminal/shell/console-like up for previous command is used more often. Users that are unused to this or require multiline interactions input navigation can comment out the last two lines of the file, while I come up with a better way to implement this.
+-->
