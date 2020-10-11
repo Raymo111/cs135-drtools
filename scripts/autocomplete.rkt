@@ -15,7 +15,7 @@
          racket/list
          quickscript)
 
-(script-help-string "Autocomplete by https://Raymond.Li")
+(script-help-string "Autocomplete by https://Raymond.Li & https://kaustubhprabhakar.tech")
 ;; Replaces the text abbreviation right before the caret with stuff
 
 (define words
