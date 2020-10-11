@@ -1,6 +1,8 @@
 ;;
 ;; **************************************************************
-;;    Copyright (c) Raymond Li <racket@raymond.li> 2020
+;;   Copyright (c) 2020
+;;                 Raymond Li <racket@raymond.li>
+;;                 Kaustubh Prabhakar <kaustubh3973@gmail.com>
 ;;    Code completion for DrRacket
 ;;    Last updated 2020-09-25
 ;;    Modified from complete-word from quickscript extras repo
