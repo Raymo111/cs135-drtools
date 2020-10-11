@@ -11,7 +11,8 @@ Various customizations for DrRacket to make life easier.
 
 ### Contributors
 - Creator and Maintainer: [Raymond Li](https://github.com/Raymo111)
-- [Thomas Park](https://github.com/ThomasPark20)
+- Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) 
+- Contributor: [Thomas Park](https://github.com/ThomasPark20)
 
 ## Racket Preferences
 ### Features
