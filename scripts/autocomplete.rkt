@@ -32,7 +32,7 @@
     ; custom design recipe:
     ("hdr" ";;
 ;; ***************************************************
-;;    Raymond Li (studentID)
+;;    Name (studentID)
 ;;    CS 135 Fall 2020
 ;;    Assignment " ", Problem 
 ;; ***************************************************
