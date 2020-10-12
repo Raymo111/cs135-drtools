@@ -1,6 +1,8 @@
 ;;
 ;; **************************************************************
-;;    Copyright (c) Raymond Li <racket@raymond.li> 2020
+;;   Copyright (c) 2020
+;;                 Raymond Li <racket@raymond.li>
+;;                 Kaustubh Prabhakar <kaustubh3973@gmail.com>
 ;;    Code completion for DrRacket
 ;;    Last updated 2020-09-25
 ;;    Modified from complete-word from quickscript extras repo
@@ -13,7 +15,7 @@
          racket/list
          quickscript)
 
-(script-help-string "Autocomplete by https://Raymond.Li")
+(script-help-string "Autocomplete by https://Raymond.Li & https://kaustubhprabhakar.tech")
 ;; Replaces the text abbreviation right before the caret with stuff
 
 (define words
@@ -30,7 +32,7 @@
     ; custom design recipe:
     ("hdr" ";;
 ;; ***************************************************
-;;    Raymond Li (studentID)
+;;    Name (studentID)
 ;;    CS 135 Fall 2020
 ;;    Assignment " ", Problem 
 ;; ***************************************************
