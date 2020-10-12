@@ -2,7 +2,7 @@
 DrRacket Tools for CS 135 course at UWaterloo
 
 ## Disclaimers
-- **I am NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
+- **The authors are NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
 - **Though it may not be necessary in all cases, DrRacket should be restarted after most customizations to allow all changes to take effect.**
 
 ## Acknowledgements
@@ -13,17 +13,6 @@ DrRacket Tools for CS 135 course at UWaterloo
 - Creator and Maintainer: [Raymond Li](https://github.com/Raymo111)
 - Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) 
 - Contributor: [Thomas Park](https://github.com/ThomasPark20)
-
-## Racket Preferences
-### Features
-- Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
-- `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
-- In addition to the notable ones mentioned here, I enabled all the features I find useful. The language is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
-
-### Installation
-- Unix: Put `racket-prefs.rktd` in `$HOME/.racket` and reload DrRacket
-- Windows: Put `racket-prefs.rktd` in `%appdata%\\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
-- Mac OS: Rename `racket-prefs.rktd` to `org.racket-lang.prefs.rktd` and put it in your preferences folder and reload DrRacket
 
 ## Autocomplete
 ### Features:
@@ -50,13 +39,10 @@ DrRacket Tools for CS 135 course at UWaterloo
 - `Ctrl+Space` trigger
 
 ### Installation
-This will be automated when I get around to the raco package.
-
 You can optionally install the `drcomplete` raco package for automated code-completion (i.e. you won't have to `Ctrl+/` all the time.) To do this, go to `File > Package Manager...`, make sure you're on the `Do What I Mean` tab, put `drcomplete` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window. Restart DrRacket, then go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
-1. Go to `Scripts > Manage scripts > New script...` from the menubar
-2. Enter `autocomplete` as the name and click `Ok`
-3. Wait for a new tab to be created, and paste in everything in `autocomplete.rkt`
-4. Restart DrRacket or `Scripts > Manage scripts > Compile scripts and reload` and `Scripts > Manage scripts > Reload menu`
+1. Go to `File > Package Manager...` from the menubar.
+2. Make sure you're on the `Do What I Mean` tab, put `cs135-drtools` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window.
+4. Restart DrRacket.
 
 ### Usage:
 1. Type a shortcut
@@ -83,9 +69,20 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 -->
 
 ### Installation
-Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. DrRacket needs to be restarted for keybindings to be updated.
+Same as autocomplete.
 
 <!--
 ### Known issues
 Up/Down messes up multi-line inputs in the interactions window. I've chosen to leave this in because multiline interactions input that needs to be edited is uncommon and can simply be navigated via a mouse or Ctrl+Left/Right, whereas the terminal/shell/console-like up for previous command is used more often. Users that are unused to this or require multiline interactions input navigation can comment out the last two lines of the file, while I come up with a better way to implement this.
 -->
+
+## Racket Preferences
+### Features
+- Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
+- `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
+- In addition to the notable ones mentioned here, I enabled all the features I find useful. The language is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
+
+### Installation
+- Unix: Put `racket-prefs.rktd` in `$HOME/.racket` and reload DrRacket
+- Windows: Put `racket-prefs.rktd` in `%appdata%\\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
+- Mac OS: Rename `racket-prefs.rktd` to `org.racket-lang.prefs.rktd` and put it in your preferences folder and reload DrRacket
