@@ -8,6 +8,6 @@
 (define deps '("base"))
 (define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/cs135-drtools.scrbl" ())))
-(define pkg-desc "Description Here")
-(define version "0.0")
+(define pkg-desc "DrRacket Tools for CS 135 course at UWaterloo")
+(define version "1.0")
 (define pkg-authors '(kaus0))
