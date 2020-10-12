@@ -18,25 +18,45 @@ DrRacket Tools for CS 135 course at UWaterloo
 ### Features:
 - Completion for the following:
 
-| Shortcut | Long form            |
-|----------|----------------------|
-| cx       | check-expect         |
-| cw       | check-within         |
-| ce       | check-error          |
-| df       | define function      |
-| d        | define               |
-| t        | true                 |
-| f        | false                |
-| hdr      | file header          |
-| cmt      | comment              |
-| l;       | `;;   `              |
-| ppe      | Purpose and examples |
-| ctr      | Contract             |
-| req      | Requires             |
-| tst      | Tests                |
-| lox      | List-of-X Template   |
+| Shortcut | Generates               |
+|----------|-------------------------|
+| cx       | check-expect            |
+| cw       | check-within            |
+| ce       | check-error             |
+| df       | define function         |
+| d        | define                  |
+| t        | true                    |
+| f        | false                   |
+| hdr      | file header             |
+| cmt      | comment                 |
+| l        | `;;   `                 |
+| ll       | 3-line comment          |
+| pa       | 3-line "Part a" comment |
+| pb       | 3-line "Part b" comment |
+| pc       | 3-line "Part c" comment |
+| pd       | 3-line "Part d" comment |
+| ppe      | Purpose and examples    |
+| ctr      | Contract                |
+| req      | Requires                |
+| tst      | Tests                   |
+| lox      | list-of-X Template      |
+| nelox    | ne-List-of-X Template   |
+| lo       | (listof )               |
+| nelo     | (ne-listof )            |
+| lost     | (listof Str)            |
+| nelost   | (ne-listof Str)         |
+| lob      | (listof Bool)           |
+| nelob    | (ne-listof Bool)        |
+| loc      | (listof Char)           |
+| neloc    | (ne-listof Char)        |
+| losy     | (listof Sym)            |
+| nelosy   | (ne-listof Sym)         |
+| lonu     | (listof Num)            |
+| nelonu   | (ne-listof Num)         |
+| lona     | (listof Nat)            |
+| nelona   | (ne-listof Nat)         |
 
-- `Ctrl+Space` trigger
+- `Ctrl+Space` trigger (**Will NOT work in comments!** just hit enter and remove the newline after completion, we're working on making these work in comments)
 
 ### Installation
 You can optionally install the `drcomplete` raco package for automated code-completion (i.e. you won't have to `Ctrl+/` all the time.) To do this, go to `File > Package Manager...`, make sure you're on the `Do What I Mean` tab, put `drcomplete` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window. Restart DrRacket, then go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
@@ -47,7 +67,7 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 ### Usage:
 1. Type a shortcut
 2. Press `Ctrl+Space`
-3. The shortcut will be replace with the long form
+3. The shortcut will be replaced with generated code
 
 ## Keybindings
 ### Features
@@ -62,7 +82,7 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 | Ctrl+/         | Comment out line with `;`                         | *None*           |
 | Ctrl+Backspace | Delete word left of cursor                        | Alt+Backspace    |
 | Ctrl+Delete    | Delete word right of cursor                       | Alt+Delete       |
-| Ctrl+Up/Down   | Switch between Interactions and Definitions panes | Ctrl+F6          |
+| Alt+Up/Down    | Switch between Interactions and Definitions panes | Ctrl+F6          |
 <!--
 | Up             | Previous command in Interactions panes            | Ctrl+up          |
 | Down           | Next command in Interactions panes                | Ctrl+down        |
