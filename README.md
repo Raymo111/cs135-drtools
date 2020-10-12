@@ -1,5 +1,5 @@
-# drracket-customization
-Various customizations for DrRacket to make life easier.
+# CS 135 DrTools
+DrRacket Tools for CS 135 course at UWaterloo
 
 ## Disclaimers
 - **I am NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
