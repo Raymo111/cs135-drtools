@@ -28,6 +28,8 @@
     ("d"   "(define " ")")
     ("t"   "true" "")
     ("f"   "false" "")
+    ("ll" ";;\n;; " "\n;;") ; semicolons can't be used
+    ("l"   ";;   " "")      ; (because treated as comment)
 
     ; custom design recipe:
     ("hdr" ";;
@@ -37,32 +39,51 @@
 ;;    Assignment " ", Problem 
 ;; ***************************************************
 ;;\n")
-    ("cmt" ";;\n;; "       "\n;;")
-    ("l;"  ";;   "         "")
-    ("ppe" ";; ("          ") \n;; Examples:\n")
-    ("ctr" ";; "           ":  -> \n")
-    ("req" ";; Requires: " "\n")
-    ("tst" ";; Tests:\n"   "")
+    ("pa" ";;\n;; Part a\n;;\n\n" "\n")
+    ("pb" ";;\n;; Part b\n;;\n\n" "\n")
+    ("pc" ";;\n;; Part c\n;;\n\n" "\n")
+    ("pd" ";;\n;; Part d\n;;\n\n" "\n")
+    ("ppe" ";; (" ") \n;; Examples:\n")
+    ("ctr" ";; " ":  -> ")
+    ("req" ";; Requires: " "")
+    ("tst" ";; Tests:\n" "")
+
+    ; lists:
+    ("lo" "(listof " ")")
+    ("nelo" "(ne-listof " ")")
+    ("lost" "(listof Str)" "")
+    ("nelost" "(ne-listof Str)" "")
+    ("lob" "(listof Bool)" "")
+    ("nelob" "(ne-listof Bool)" "")
+    ("loc" "(listof Char)" "")
+    ("neloc" "(ne-listof Char)" "")
+    ("losy" "(listof Sym)" "")
+    ("nelosy" "(ne-listof Sym)" "")
+    ("lonu" "(listof Num)" "")
+    ("nelonu" "(ne-listof Num)" "")
+    ("lona" "(listof Nat)" "")
+    ("nelona" "(ne-listof Nat)" "")
     ("lox"  ";; (listof-X-template lox) " "
 ;; Examples:
 (check-expect (listof-X-template empty) )
-(check-expect (listof-X-template (cons  empty)) )\n\n
+(check-expect (listof-X-template (cons  empty)) )\n
 ;; listof-X-template: (listof ) -> 
-(define (listof-X-template lox) ...
+(define (listof-X-template lox)
   (cond [(empty? lox) ...]
         [(cons? lox) ... (first lox)
                      ... (listof-X-template (rest lox)) ...]))\n
-;; Tests")
-    ("nel"  ";; (ne-listof-X-template nelox) " "
+;; Tests\n")
+    ("nelox"  ";; (ne-listof-X-template nelox) " "
 ;; Examples:
 (check-expect (ne-listof-X-template (cons  empty) )
-(check-expect (nelistof-X-template (cons  (cons  empty))) )\n\n
+(check-expect (ne-listof-X-template (cons  (cons  empty))) )\n
 ;; ne-listof-X-template: (ne-listof ) -> 
-(define (ne-listof-X-template nelox) ...
+(define (ne-listof-X-template nelox)
   (cond [(empty? (rest nelox)) (... (first nelox))]
         [else (... (first nelox)
                    (ne-listof-X-template (rest nelox)))]))\n
-;; Tests")
+;; Tests\n")
+
     #| Defaults from complete-word plugin of quickscript extras
     ("dsr"   "(define-syntax-rule (" ")\n  )")
     ("ds"    "(define-syntax " "\n  )")
