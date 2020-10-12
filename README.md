@@ -14,8 +14,14 @@ DrRacket Tools for CS 135 course at UWaterloo
 - Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) 
 - Contributor: [Thomas Park](https://github.com/ThomasPark20)
 
-## Autocomplete
-### Features:
+## Installation
+You can optionally install the `drcomplete` raco package for automated code-completion (i.e. you won't have to `Ctrl+/` all the time.) To do this, go to `File > Package Manager...`, make sure you're on the `Do What I Mean` tab, put `drcomplete` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window. Restart DrRacket, then go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
+1. Go to `File > Package Manager...` from the menubar.
+2. Make sure you're on the `Do What I Mean` tab, put `cs135-drtools` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window.
+4. Restart DrRacket.
+
+## Tools
+### Autocomplete
 - Completion for the following:
 
 | Shortcut | Generates               |
@@ -56,21 +62,15 @@ DrRacket Tools for CS 135 course at UWaterloo
 | lona     | (listof Nat)            |
 | nelona   | (ne-listof Nat)         |
 
-- `Ctrl+Space` trigger (**Will NOT work in comments!** just hit enter and remove the newline after completion, we're working on making these work in comments)
+- `Ctrl+Space` trigger (**Will NOT work in comments!**) just hit enter and remove the newline after completion, we're working on making these work in comments)
 
-### Installation
-You can optionally install the `drcomplete` raco package for automated code-completion (i.e. you won't have to `Ctrl+/` all the time.) To do this, go to `File > Package Manager...`, make sure you're on the `Do What I Mean` tab, put `drcomplete` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window. Restart DrRacket, then go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
-1. Go to `File > Package Manager...` from the menubar.
-2. Make sure you're on the `Do What I Mean` tab, put `cs135-drtools` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window.
-4. Restart DrRacket.
-
-### Usage:
+#### Usage:
 1. Type a shortcut
 2. Press `Ctrl+Space`
 3. The shortcut will be replaced with generated code
 
-## Keybindings
-### Features
+### Keybindings
+- Works out of the box after installing the package
 - Current custom keybindings that I'm used to and have implemented are:
 
 | Keybinding     | What it does                                      | DrRacket default |
@@ -86,23 +86,17 @@ You can optionally install the `drcomplete` raco package for automated code-comp
 <!--
 | Up             | Previous command in Interactions panes            | Ctrl+up          |
 | Down           | Next command in Interactions panes                | Ctrl+down        |
--->
 
-### Installation
-Same as autocomplete.
-
-<!--
-### Known issues
+#### Known issues
 Up/Down messes up multi-line inputs in the interactions window. I've chosen to leave this in because multiline interactions input that needs to be edited is uncommon and can simply be navigated via a mouse or Ctrl+Left/Right, whereas the terminal/shell/console-like up for previous command is used more often. Users that are unused to this or require multiline interactions input navigation can comment out the last two lines of the file, while I come up with a better way to implement this.
 -->
 
-## Racket Preferences
-### Features
+### Racket Preferences
 - Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
 - `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
-- In addition to the notable ones mentioned here, I enabled all the features I find useful. The language is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
+- In addition to the notable ones mentioned here, I enabled all the features I find useful. The default language for new files is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
 
-### Installation
+#### Installation
 - Unix: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `$HOME/.racket` and reload DrRacket
 - Windows: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `%appdata%\\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
 - Mac OS: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to your preferences folder, rename the file to `org.racket-lang.prefs.rktd`, and reload DrRacket
