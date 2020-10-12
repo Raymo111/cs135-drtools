@@ -3,8 +3,8 @@
                     racket/base]]
 
 @title{cs135-drtools}
-@author{kaus0}
+@author{Raymo111, SantaKaus}
 
 @defmodule[cs135-drtools]
 
-Package Description Here
+DrRacket tools for CS 135 course at UWaterloo
