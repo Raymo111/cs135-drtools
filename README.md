@@ -83,6 +83,6 @@ Up/Down messes up multi-line inputs in the interactions window. I've chosen to l
 - In addition to the notable ones mentioned here, I enabled all the features I find useful. The language is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
 
 ### Installation
-- Unix: Put `racket-prefs.rktd` in `$HOME/.racket` and reload DrRacket
-- Windows: Put `racket-prefs.rktd` in `%appdata%\\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
-- Mac OS: Rename `racket-prefs.rktd` to `org.racket-lang.prefs.rktd` and put it in your preferences folder and reload DrRacket
+- Unix: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `$HOME/.racket` and reload DrRacket
+- Windows: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `%appdata%\\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
+- Mac OS: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to your preferences folder, rename the file to `org.racket-lang.prefs.rktd`, and reload DrRacket
