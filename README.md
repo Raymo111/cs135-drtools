@@ -1,8 +1,8 @@
-# drracket-customization
-Various customizations for DrRacket to make life easier
+# CS 135 DrTools
+DrRacket Tools for CS 135 course at UWaterloo
 
 ## Disclaimers
-- **I am NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
+- **The authors are NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
 - **Though it may not be necessary in all cases, DrRacket should be restarted after most customizations to allow all changes to take effect.**
 
 ## Acknowledgements
@@ -10,71 +10,95 @@ Various customizations for DrRacket to make life easier
 - Keybindings was adapted from [Racket-lang.org](https://docs.racket-lang.org/drracket/Keyboard_Shortcuts.html#%28part._defining-shortcuts%29) documentation
 
 ### Contributors
-- [Thomas Park](https://github.com/ThomasPark20)
+- Creator and Maintainer: [Raymond Li](https://github.com/Raymo111)
+- Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) 
+- Contributor: [Thomas Park](https://github.com/ThomasPark20)
 
-## Racket Preferences
-### Features
-- Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
-- `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
-- In addition to the notable ones mentioned here, I enabled all the features I find useful. The language is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
+## Installation
+1. Go to `File > Install Package...` from the menubar.
+2. Type `cs135-drtools` in the input field beside `Package Source:`, and click `Install`.
+4. Restart DrRacket.
 
-### Installation
-- Unix: Put `racket-prefs.rktd` in `$HOME/.racket` and reload DrRacket
-- Windows: Put `racket-prefs.rktd` in `%appdata%\\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
-- Mac OS: Rename `racket-prefs.rktd` to `org.racket-lang.prefs.rktd` and put it in your preferences folder and reload DrRacket
-
-## Autocomplete
-### Features:
+## Tools
+### Autocomplete
 - Completion for the following:
 
-| Shortcut | Long form            |
-|----------|----------------------|
-| cx       | check-expect         |
-| cw       | check-within         |
-| ce       | check-error          |
-| df       | define function      |
-| d        | define               |
-| t        | true                 |
-| f        | false                |
-| hdr      | file header          |
-| cmt      | comment              |
-| l;       | `;;   `              |
-| ppe      | Purpose and examples |
-| ctr      | Contract             |
-| req      | Requires             |
-| tst      | Tests                |
-| lox      | List-of-X Template   |
+| Shortcut | Generates               |
+|----------|-------------------------|
+| cx       | check-expect            |
+| cw       | check-within            |
+| ce       | check-error             |
+| df       | define function         |
+| d        | define                  |
+| t        | true                    |
+| f        | false                   |
+| hdr      | file header             |
+| cmt      | comment                 |
+| l        | `;;   `                 |
+| ll       | 3-line comment          |
+| pa       | 3-line "Part a" comment |
+| pb       | 3-line "Part b" comment |
+| pc       | 3-line "Part c" comment |
+| pd       | 3-line "Part d" comment |
+| ppe      | Purpose and examples    |
+| ctr      | Contract                |
+| req      | Requires                |
+| tst      | Tests                   |
+| lox      | list-of-X Template      |
+| nelox    | ne-List-of-X Template   |
+| lo       | (listof )               |
+| nelo     | (ne-listof )            |
+| lost     | (listof Str)            |
+| nelost   | (ne-listof Str)         |
+| lob      | (listof Bool)           |
+| nelob    | (ne-listof Bool)        |
+| loc      | (listof Char)           |
+| neloc    | (ne-listof Char)        |
+| losy     | (listof Sym)            |
+| nelosy   | (ne-listof Sym)         |
+| lonu     | (listof Num)            |
+| nelonu   | (ne-listof Num)         |
+| lona     | (listof Nat)            |
+| nelona   | (ne-listof Nat)         |
 
-- `Ctrl+Space` trigger
+- `Ctrl+Space` trigger (**Will NOT work in comments!**) just hit enter and remove the newline after completion, we're working on making these work in comments)
 
-### Installation
-This will be automated when I get around to the raco package.
-
-You can optionally install the `drcomplete` raco package for automated code-completion (i.e. you won't have to `Ctrl+/` all the time.) To do this, go to `File > Package Manager...`, make sure you're on the `Do What I Mean` tab, put `drcomplete` in the input field beside `Package Source:`, and click `Install` at the bottom right of the window. Restart DrRacket, then go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
-1. Go to `Scripts > Manage scripts > New script...` from the menubar
-2. Enter `autocomplete` as the name and click `Ok`
-3. Wait for a new tab to be created, and paste in everything in `autocomplete.rkt`
-4. Restart DrRacket or `Scripts > Manage scripts > Compile scripts and reload` and `Scripts > Manage scripts > Reload menu`
-
-### Usage:
+#### Usage:
 1. Type a shortcut
 2. Press `Ctrl+Space`
-3. The shortcut will be replace with the long form
+3. The shortcut will be replaced with generated code
 
-## Keybindings
-### Features
+### Keybindings
+- Works out of the box after installing the package
 - Current custom keybindings that I'm used to and have implemented are:
 
-| Keybinding     | What it does                                        | DrRacket default |
-|----------------|-----------------------------------------------------|------------------|
-| Alt+R          | Run the program                                     | Ctrl+R or F5     |
-| Ctrl+Shift+F   | Indent all lines                                    | Ctrl+I           |
-| Ctrl+H         | Show Replace                                        | Ctrl+Shift+R     |
-| Ctrl+Shift+R   | Replace All                                         | *None*           |
-| Ctrl+/         | Comment out line with `;`                           | *None*           |
-| Ctrl+Backspace | Delete word left of cursor                          | Alt+Backspace    |
-| Ctrl+Delete    | Delete word right of cursor                         | Alt+Delete       |
-| Ctrl+Up/Down   | Switch between Interactions and Definitions Windows | Ctrl+F6          |
+| Keybinding     | What it does                                      | DrRacket default |
+|----------------|---------------------------------------------------|------------------|
+| Alt+R          | Run the program                                   | Ctrl+R or F5     |
+| Ctrl+Shift+F   | Indent all lines                                  | Ctrl+I           |
+| Ctrl+H         | Show Replace                                      | Ctrl+Shift+R     |
+| Ctrl+Shift+R   | Replace All                                       | *None*           |
+| Ctrl+/         | Comment out line with `;`                         | *None*           |
+| Ctrl+Backspace | Delete word left of cursor                        | Alt+Backspace    |
+| Ctrl+Delete    | Delete word right of cursor                       | Alt+Delete       |
+| Alt+Up/Down    | Switch between Interactions and Definitions panes | Ctrl+F6          |
 
-### Installation
-Go to `Edit > Keybindings > Add User-Defined-Keybindings` and choose `keybindings.rkt`. DrRacket needs to be restarted for keybindings to be updated.
+<!--
+| Up             | Previous command in Interactions panes            | Ctrl+up          |
+| Down           | Next command in Interactions panes                | Ctrl+down        |
+Known issue:
+Up/Down messes up multi-line inputs in the interactions window. I've chosen to leave this in because multiline interactions input that needs to be edited is uncommon and can simply be navigated via a mouse or Ctrl+Left/Right, whereas the terminal/shell/console-like up for previous command is used more often. Users that are unused to this or require multiline interactions input navigation can comment out the last two lines of the file, while I come up with a better way to implement this.
+-->
+
+### Racket Preferences
+- Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
+- `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
+- In addition to the notable ones mentioned here, I enabled all the features I find useful. The default language for new files is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
+
+#### Installation
+- Unix: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `$HOME/.racket` and reload DrRacket
+- Windows: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `%appdata%\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
+- Mac OS: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to your preferences folder, rename the file to `org.racket-lang.prefs.rktd`, and reload DrRacket
+
+### Additional Tips
+Installing the `drcomplete` raco package will provide automated completion of variables and functions. To do this, install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).

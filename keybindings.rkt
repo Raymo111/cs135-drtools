@@ -1,6 +1,8 @@
 ;;
 ;; **************************************************************
-;;    Copyright (c) Raymond Li <racket@raymond.li> 2020
+;;   Copyright (c) 2020
+;;                 Raymond Li <racket@raymond.li>
+;;                 Kaustubh Prabhakar <kaustubh3973@gmail.com>
 ;;    Keybindings for DrRacket
 ;;    Last updated 2020-09-19
 ;;    Modified from Racket documentation
@@ -65,3 +67,5 @@
 (rebind "c:del" "kill-word")
 (rebind "m:up" "shift-focus")
 (rebind "m:down" "shift-focus")
+;(rebind "up" "put-previous-sexp")
+;(rebind "down" "put-next-sexp")
