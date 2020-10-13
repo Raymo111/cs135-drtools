@@ -1,6 +1,13 @@
 # CS 135 DrTools
 DrRacket Tools for CS 135 course at UWaterloo
 
+![hdr](/demo/hdr.gif)
+
+![lox](/demo/lox.gif)
+
+![main](/demo/main.gif)
+
+
 ## Disclaimers
 - **The authors are NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
 - **Though it may not be necessary in all cases, DrRacket should be restarted after most customizations to allow all changes to take effect.**
