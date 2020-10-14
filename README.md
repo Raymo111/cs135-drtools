@@ -94,14 +94,16 @@ Up/Down messes up multi-line inputs in the interactions window. I've chosen to l
 -->
 
 ### Racket Preferences
+- **Note: Your preferences will NOT be overwritten upon installing this package, as long as you don't follow the installation instructions below.**
 - Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
 - `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
-- In addition to the notable ones mentioned here, I enabled all the features I find useful. The default language for new files is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
+- In addition to the notable ones mentioned here, all the features we found useful have been enabled. The default language for new files is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as we progress through the course, or it may not.
 
 #### Installation
+- **!Important! BACK UP your existing preferences file FIRST, just in case you don't like ours.**
 - Unix: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `$HOME/.racket` and reload DrRacket
 - Windows: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `%appdata%\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
 - Mac OS: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to your preferences folder, rename the file to `org.racket-lang.prefs.rktd`, and reload DrRacket
 
 ### Additional Tips
-Installing the `drcomplete` raco package (**Not part of this package**) will provide automated completion of variables and functions. To do this, install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
+Installing the `drcomplete` raco package (**not part of this package**) will provide automated completion of variables and functions. You can install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, click `Edit > Enable Automatic Autocompletion` (last item) in the menubar to enable it, if it isn't already enabled.
