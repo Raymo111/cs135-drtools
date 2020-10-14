@@ -1,12 +1,7 @@
 # CS 135 DrTools
 DrRacket Tools for CS 135 course at UWaterloo
 
-![hdr](/demo/hdr.gif)
-
-![lox](/demo/lox.gif)
-
-![main](/demo/main.gif)
-
+<p align="center"><img src="demo/hdr.gif" width=50% alt="Header Completion" title="Header Completion" /><img src="demo/lox.gif" width=50% alt="List-of-X-Template Completion" title="List-of-X-Template Completion" /><img src="demo/main.gif" width=50% alt="Autocomplete Demo" title="Autocomplete Demo" /></p>
 
 ## Disclaimers
 - **The authors are NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
@@ -23,7 +18,7 @@ DrRacket Tools for CS 135 course at UWaterloo
 
 ## Installation
 1. Go to `File > Install Package...` from the menubar.
-2. Type `cs135-drtools` in the input field beside `Package Source:`, and click `Install`.
+2. Put `cs135-drtools` in the input field beside `Package Source:`, and click `Install`.
 4. Restart DrRacket.
 
 ## Tools
@@ -77,7 +72,8 @@ DrRacket Tools for CS 135 course at UWaterloo
 
 ### Keybindings
 - Works out of the box after installing the package
-- Current custom keybindings that I'm used to and have implemented are:
+- **Note: No commonly-used original keybindings are overwritten.** (i.e. The DrRacket default keybindings still do what they used to. This package simply adds more.)
+- Provides the following keybindings:
 
 | Keybinding     | What it does                                      | DrRacket default |
 |----------------|---------------------------------------------------|------------------|
@@ -108,4 +104,4 @@ Up/Down messes up multi-line inputs in the interactions window. I've chosen to l
 - Mac OS: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to your preferences folder, rename the file to `org.racket-lang.prefs.rktd`, and reload DrRacket
 
 ### Additional Tips
-Installing the `drcomplete` raco package will provide automated completion of variables and functions. To do this, install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
+Installing the `drcomplete` raco package (**Not part of this package**) will provide automated completion of variables and functions. To do this, install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
