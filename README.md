@@ -12,8 +12,8 @@ DrRacket Tools for CS 135 course at UWaterloo
 - Keybindings was adapted from [Racket-lang.org](https://docs.racket-lang.org/drracket/Keyboard_Shortcuts.html#%28part._defining-shortcuts%29) documentation
 
 ### Contributors
-- Creator and Maintainer: [Raymond Li](https://github.com/Raymo111)
-- Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) 
+- Creator and Maintainer: [Raymond Li](https://github.com/Raymo111) ([https://Raymond.Li](https://raymond.li))
+- Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) ([https://KaustubhPrabhakar.tech](https://kaustubhprabhakar.tech))
 - Contributor: [Thomas Park](https://github.com/ThomasPark20)
 
 ## Installation
