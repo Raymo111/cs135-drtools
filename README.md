@@ -1,9 +1,7 @@
 # CS 135 DrTools
 DrRacket Tools for CS 135 course at UWaterloo
 
-<img src="demo/hdr.gif" alt="Header Completion" title="Header Completion" />
-<img src="demo/lox.gif" alt="List-of-X-Template Completion" title="List-of-X-Template Completion" />
-<img src="demo/main.gif" alt="Autocomplete Demo" title="Autocomplete Demo" />
+<img src="demo/demo.gif" alt="Autocomplete Demo" title="Autocomplete Demo" />
 
 ## Disclaimers
 - **The authors are NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
