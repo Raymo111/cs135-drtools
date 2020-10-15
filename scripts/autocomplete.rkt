@@ -67,7 +67,7 @@
 ;; Examples:
 (check-expect (countdown 0) (cons 0 empty) )
 (check-expect (countdown 2) (cons 2 (cons 1 (cons 0 empty))))\n\n
-;; countdown: Nat -> (listof Nat)
+;; countdown: Nat -> (listof Nat) 
 (define (countdown n) ...
   (cond [(zero? n) (cons 0 empty)]
         [else (cons n (countdown (sub1 n)))]))\n
