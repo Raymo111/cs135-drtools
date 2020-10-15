@@ -15,7 +15,7 @@
          racket/list
          quickscript)
 
-(script-help-string "Autocomplete by https://Raymond.Li & https://kaustubhprabhakar.tech")
+(script-help-string "CS 135 Autocomplete")
 ;; Replaces the text abbreviation right before the caret with stuff
 
 (define words
@@ -36,7 +36,7 @@
 ;; ***************************************************
 ;;    Name (studentID)
 ;;    CS 135 Fall 2020
-;;    Assignment " ", Problem
+;;    Assignment " ", Problem 
 ;; ***************************************************
 ;;\n")
     ("pa" ";;\n;; Part a\n;;\n\n" "\n")
