@@ -15,7 +15,7 @@
          racket/list
          quickscript)
 
-(script-help-string "Autocomplete by https://Raymond.Li & https://kaustubhprabhakar.tech")
+(script-help-string "CS 135 Autocomplete")
 ;; Replaces the text abbreviation right before the caret with stuff
 
 (define words
@@ -63,6 +63,15 @@
     ("nelonu" "(ne-listof Num)" "")
     ("lona" "(listof Nat)" "")
     ("nelona" "(ne-listof Nat)" "")
+    ("ctd"  ";; (countdown n) " "
+;; Examples:
+(check-expect (countdown 0) (cons 0 empty) )
+(check-expect (countdown 2) (cons 2 (cons 1 (cons 0 empty))))\n\n
+;; countdown: Nat -> (listof Nat) 
+(define (countdown n) ...
+  (cond [(zero? n) (cons 0 empty)]
+        [else (cons n (countdown (sub1 n)))]))\n
+;; Tests")
     ("lox"  ";; (listof-X-template lox) " "
 ;; Examples:
 (check-expect (listof-X-template empty) )
