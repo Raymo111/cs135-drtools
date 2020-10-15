@@ -1,12 +1,7 @@
 # CS 135 DrTools
 DrRacket Tools for CS 135 course at UWaterloo
 
-![hdr](/demo/hdr.gif)
-
-![lox](/demo/lox.gif)
-
-![main](/demo/main.gif)
-
+<img src="demo/demo.gif" alt="Autocomplete Demo" title="Autocomplete Demo" />
 
 ## Disclaimers
 - **The authors are NOT responsible for any issues using any part of this repository will cause you. ALWAYS back up your files, preferences and code!**
@@ -17,13 +12,14 @@ DrRacket Tools for CS 135 course at UWaterloo
 - Keybindings was adapted from [Racket-lang.org](https://docs.racket-lang.org/drracket/Keyboard_Shortcuts.html#%28part._defining-shortcuts%29) documentation
 
 ### Contributors
-- Creator and Maintainer: [Raymond Li](https://github.com/Raymo111)
-- Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) 
+- Creator and Maintainer: [Raymond Li](https://github.com/Raymo111) ([https://Raymond.Li](https://raymond.li))
+- Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) ([https://KaustubhPrabhakar.tech](https://kaustubhprabhakar.tech))
 - Contributor: [Thomas Park](https://github.com/ThomasPark20)
 
 ## Installation
+There are 2 parts of this package that you can install. By following the steps below, you will get autocomplete and additional keybindings. To install the preferences, follow the installation section under [Racket Preferences](#installation-1). Default Racket keybindings will continue to work after installation.
 1. Go to `File > Install Package...` from the menubar.
-2. Type `cs135-drtools` in the input field beside `Package Source:`, and click `Install`.
+2. Put `cs135-drtools` in the input field beside `Package Source:`, and click `Install`.
 4. Restart DrRacket.
 
 ## Tools
@@ -77,7 +73,8 @@ DrRacket Tools for CS 135 course at UWaterloo
 
 ### Keybindings
 - Works out of the box after installing the package
-- Current custom keybindings that I'm used to and have implemented are:
+- **Note: No commonly-used original keybindings are overwritten.** (i.e. The DrRacket default keybindings still do what they used to. This package simply adds more.)
+- Provides the following keybindings:
 
 | Keybinding     | What it does                                      | DrRacket default |
 |----------------|---------------------------------------------------|------------------|
@@ -98,14 +95,18 @@ Up/Down messes up multi-line inputs in the interactions window. I've chosen to l
 -->
 
 ### Racket Preferences
+<!--- **Note: Your preferences will NOT be overwritten upon installing this package, as long as you don't follow the installation instructions below.**-->
 - Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
 - `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
-- In addition to the notable ones mentioned here, I enabled all the features I find useful. The default language for new files is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as I progress through the course, or it may not.
+- In addition to the notable ones mentioned here, all the features we found useful have been enabled. The default language for new files is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as we progress through the course, or it may not.
 
 #### Installation
+- **!Important! BACK UP your existing preferences file FIRST, just in case you don't like ours.**
 - Unix: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `$HOME/.racket` and reload DrRacket
 - Windows: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to `%appdata%\Racket` (paste that into the File Explorer location bar and hit enter) and reload DrRacket
 - Mac OS: Download [`racket-prefs.rktd`](https://raw.githubusercontent.com/Raymo111/cs135-drtools/master/racket-prefs.rktd) to your preferences folder, rename the file to `org.racket-lang.prefs.rktd`, and reload DrRacket
 
 ### Additional Tips
-Installing the `drcomplete` raco package will provide automated completion of variables and functions. To do this, install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, go to `Edit > Enable Automatic Autocompletion` (last item) in the menubar (if it's not already enabled).
+Installing the `drcomplete` raco package (**not part of this package**) will provide automated completion of variables and functions. You can install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, click `Edit > Enable Automatic Autocompletion` (last item) in the menubar to enable it, if it isn't already enabled.
+
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2FGitHub.com%2FRaymo111%2Fcs135-drtools)
