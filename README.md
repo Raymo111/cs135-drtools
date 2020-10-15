@@ -17,6 +17,7 @@ DrRacket Tools for CS 135 course at UWaterloo
 - Contributor: [Thomas Park](https://github.com/ThomasPark20)
 
 ## Installation
+There are 2 parts of this package that you can install. By following the steps below, you will get autocomplete and additional keybindings. To install the preferences, follow the installation section under [Racket Preferences](#Racket-Preferences). Default Racket keybindings will continue to work after installation.
 1. Go to `File > Install Package...` from the menubar.
 2. Put `cs135-drtools` in the input field beside `Package Source:`, and click `Install`.
 4. Restart DrRacket.
@@ -94,7 +95,7 @@ Up/Down messes up multi-line inputs in the interactions window. I've chosen to l
 -->
 
 ### Racket Preferences
-- **Note: Your preferences will NOT be overwritten upon installing this package, as long as you don't follow the installation instructions below.**
+<!--- **Note: Your preferences will NOT be overwritten upon installing this package, as long as you don't follow the installation instructions below.**-->
 - Dark mode based on [Monokai v2.1](http://www.eclipsecolorthemes.org/?view=theme&id=52794)
 - `[` (left square bracket) will automatically determine the right bracket for you (no need to `Shift+9` anymore!) and insert a close bracket for you as well
 - In addition to the notable ones mentioned here, all the features we found useful have been enabled. The default language for new files is set to `Beginning Student Custom`, the starting language for CS 135 at UWaterloo. This may change as we progress through the course, or it may not.
