@@ -111,5 +111,4 @@ Up/Down messes up multi-line inputs in the interactions window. I've chosen to l
 ### Additional Tips
 Installing the `drcomplete` raco package (**not part of this package**) will provide automated completion of variables and functions. You can install `drcomplete` the same way you installed `cs135-drtools`. After restarting DrRacket, click `Edit > Enable Automatic Autocompletion` (last item) in the menubar to enable it, if it isn't already enabled.
 
-<!-- hitwebcounter Code START -->
-<img src="https://hitwebcounter.com/counter/counter.php?page=7692100&style=0028&nbdigits=5&type=page&initCount=10" title="Page Views" Alt="Page views"   border="0" />
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2FGitHub.com%2FRaymo111%2Fcs135-drtools)
