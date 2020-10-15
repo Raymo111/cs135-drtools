@@ -17,7 +17,7 @@ DrRacket Tools for CS 135 course at UWaterloo
 - Contributor: [Thomas Park](https://github.com/ThomasPark20)
 
 ## Installation
-There are 2 parts of this package that you can install. By following the steps below, you will get autocomplete and additional keybindings. To install the preferences, follow the installation section under [Racket Preferences](#Racket-Preferences). Default Racket keybindings will continue to work after installation.
+There are 2 parts of this package that you can install. By following the steps below, you will get autocomplete and additional keybindings. To install the preferences, follow the installation section under [Racket Preferences](#installation-1). Default Racket keybindings will continue to work after installation.
 1. Go to `File > Install Package...` from the menubar.
 2. Put `cs135-drtools` in the input field beside `Package Source:`, and click `Install`.
 4. Restart DrRacket.
