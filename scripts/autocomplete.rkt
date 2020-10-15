@@ -76,7 +76,7 @@
 ;; Examples:
 (check-expect (listof-X-template empty) )
 (check-expect (listof-X-template (cons  empty)) )\n
-;; listof-X-template: (listof ) ->
+;; listof-X-template: (listof ) -> 
 (define (listof-X-template lox)
   (cond [(empty? lox) ...]
         [(cons? lox) ... (first lox)
@@ -86,7 +86,7 @@
 ;; Examples:
 (check-expect (ne-listof-X-template (cons  empty) )
 (check-expect (ne-listof-X-template (cons  (cons  empty))) )\n
-;; ne-listof-X-template: (ne-listof ) ->
+;; ne-listof-X-template: (ne-listof ) -> 
 (define (ne-listof-X-template nelox)
   (cond [(empty? (rest nelox)) (... (first nelox))]
         [else (... (first nelox)
@@ -115,7 +115,7 @@
 
 (define-script autocomplete
   #:label "Autocomplete"
-  #:shortcut #\
+  #:shortcut #\ 
   #:shortcut-prefix (ctl)
   (λ (s #:editor ed)
     (define pos (send ed get-end-position))
