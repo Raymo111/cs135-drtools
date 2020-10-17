@@ -63,35 +63,35 @@
     ("nelonu" "(ne-listof Num)" "")
     ("lona" "(listof Nat)" "")
     ("nelona" "(ne-listof Nat)" "")
+    ("lox"  ";; (listof-X-template lox) " "
+;; Examples:
+(check-expect (listof-X-template empty) )
+(check-expect (listof-X-template (list )) )\n
+;; listof-X-template: (listof ) -> 
+(define (listof-X-template lox)
+  (cond [(empty? lox) ]
+        [else ( (first lox)
+               (listof-X-template (rest lox)))]))\n
+;; Tests\n")
+    ("nelox"  ";; (ne-listof-X-template nelox) " "
+;; Examples:
+(check-expect (ne-listof-X-template (list ) )
+(check-expect (ne-listof-X-template (list )) )\n
+;; ne-listof-X-template: (ne-listof ) -> 
+(define (ne-listof-X-template nelox)
+  (cond [(empty? (rest nelox)) ( (first nelox))]
+        [else ( (first nelox)
+                   (ne-listof-X-template (rest nelox)))]))\n
+;; Tests\n")
     ("ctd"  ";; (countdown n) " "
 ;; Examples:
 (check-expect (countdown 0) (cons 0 empty) )
 (check-expect (countdown 2) (cons 2 (cons 1 (cons 0 empty))))\n\n
 ;; countdown: Nat -> (listof Nat) 
-(define (countdown n) ...
+(define (countdown n)
   (cond [(zero? n) (cons 0 empty)]
         [else (cons n (countdown (sub1 n)))]))\n
 ;; Tests")
-    ("lox"  ";; (listof-X-template lox) " "
-;; Examples:
-(check-expect (listof-X-template empty) )
-(check-expect (listof-X-template (cons  empty)) )\n
-;; listof-X-template: (listof ) -> 
-(define (listof-X-template lox)
-  (cond [(empty? lox) ...]
-        [(cons? lox) ... (first lox)
-                     ... (listof-X-template (rest lox)) ...]))\n
-;; Tests\n")
-    ("nelox"  ";; (ne-listof-X-template nelox) " "
-;; Examples:
-(check-expect (ne-listof-X-template (cons  empty) )
-(check-expect (ne-listof-X-template (cons  (cons  empty))) )\n
-;; ne-listof-X-template: (ne-listof ) -> 
-(define (ne-listof-X-template nelox)
-  (cond [(empty? (rest nelox)) (... (first nelox))]
-        [else (... (first nelox)
-                   (ne-listof-X-template (rest nelox)))]))\n
-;; Tests\n")
 
     #| Defaults from complete-word plugin of quickscript extras
     ("dsr"   "(define-syntax-rule (" ")\n  )")
