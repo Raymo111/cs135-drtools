@@ -27,6 +27,8 @@
     ("df"  "(define (" ")\n  ())")
     ("d"   "(define " ")")
     ("if"  "(if (" ")\n () ())")
+    ("cnd" "(cond\n  [(" ") ()]\n  [else ()])")
+    ("ds"  "(display " ")")
     ("t"   "true" "")
     ("f"   "false" "")
     ("ll" ";;\n;; " "\n;;") ; semicolons can't be used
