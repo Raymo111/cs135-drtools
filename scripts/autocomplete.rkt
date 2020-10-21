@@ -26,6 +26,7 @@
     ("ce"  "(check-error (" ") )")
     ("df"  "(define (" ")\n  ())")
     ("d"   "(define " ")")
+    ("if"  "(if (" ")\n () ())")
     ("t"   "true" "")
     ("f"   "false" "")
     ("ll" ";;\n;; " "\n;;") ; semicolons can't be used
