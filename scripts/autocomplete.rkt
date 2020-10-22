@@ -27,7 +27,6 @@
     ("df"  "(define (" ")\n  ())")
     ("d"   "(define " ")")
     ("cnd" "(cond\n  [(" ") ()]\n  [else ()])")
-    ("ds"  "(display " ")")
     ("if"  "(if (" ") )")
     ("t"   "true" "")
     ("f"   "false" "")
