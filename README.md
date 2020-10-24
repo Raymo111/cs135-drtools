@@ -33,6 +33,9 @@ There are 2 parts of this package that you can install. By following the steps b
 | ce       | check-error             |
 | df       | define function         |
 | d        | define                  |
+| c        | cond with else          |
+| if       | if statement            |
+| ds       | displa                  |
 | t        | true                    |
 | f        | false                   |
 | hdr      | file header             |
