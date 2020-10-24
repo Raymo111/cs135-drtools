@@ -26,7 +26,7 @@
     ("ce"  "(check-error (" ") )")
     ("df"  "(define (" ")\n  ())")
     ("d"   "(define " ")")
-    ("cnd" "(cond [(" ") ][else ])")
+    ("c" "(cond [(" ") ][else ])")
     ("if"  "(if (" ") )")
     ("ds"  "(display " ")")
     ("t"   "true" "")
