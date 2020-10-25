@@ -24,7 +24,7 @@
     ("cx"  "(check-expect (" ") )")
     ("cw"  "(check-within (" ")  tolerance)")
     ("ce"  "(check-error (" ") )")
-    ("df"  "(define (" ")\n  ())")
+    ("df"  "(define (" ")\n  ())\n")
     ("d"   "(define " ")")
     ("c" "(cond [(" ") ][else ])")
     ("if"  "(if (" ") )")
@@ -50,6 +50,8 @@
     ("ctr" ";; " ":  -> ")
     ("req" ";; Requires: " "")
     ("tst" ";; Tests:\n" "")
+    ("tlr" ";; Tolerance for check-within
+(define tolerance 0.01)" "")
 
     ; lists:
     ("lo" "(listof " ")")
