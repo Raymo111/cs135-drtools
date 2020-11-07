@@ -26,17 +26,17 @@
     ("ce"  "(check-error (" ") )")
     ("df"  "(define (" ")\n  ())\n")
     ("d"   "(define " ")")
-	("dfs" "(define-struct "" ())")
-	("ms" "(make-""  )")
+    ("dfs" "(define-struct "" ())")
+    ("ms"  "(make-""  )")
     ("c"   "(cond [(" ") ][else ])")
     ("if"  "(if (" ") )")
-	("con" "(cons "" empty)")
-	("li"  "(list "")")
+    ("con" "(cons "" empty)")
+    ("li"  "(list "")")
     ("ds"  "(display " ")")
     ("t"   "true" "")
     ("f"   "false" "")
-	("e"   "empty" "")
-    ("ll" ";;\n;; " "\n;;") ; semicolons can't be used
+    ("e"   "empty" "")
+    ("ll"  ";;\n;; " "\n;;") ; semicolons can't be used
     ("l"   ";;   " "")      ; (because treated as comment)
 
     ; custom design recipe:
