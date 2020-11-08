@@ -34,7 +34,7 @@ There are 2 parts of this package that you can install. By following the steps b
 | df       | define function         |
 | d        | define                  |
 | ds       | define structure        |
-| ms       | make structure          |
+| m        | make structure          |
 | c        | cond with else          |
 | if       | if statement            |
 | con      | list in cons notation   |
