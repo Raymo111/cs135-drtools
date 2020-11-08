@@ -24,6 +24,7 @@ There are 2 parts of this package that you can install. By following the steps b
 
 ## Tools
 ### Autocomplete
+- `Ctrl+Space` trigger (**Will NOT work in comments!**) just hit enter and remove the newline after completion, we're working on making these work in comments)
 - Completion for the following:
 
 | Shortcut | Generates               |
@@ -73,8 +74,6 @@ There are 2 parts of this package that you can install. By following the steps b
 | nelonu   | (ne-listof Num)         |
 | lona     | (listof Nat)            |
 | nelona   | (ne-listof Nat)         |
-
-- `Ctrl+Space` trigger (**Will NOT work in comments!**) just hit enter and remove the newline after completion, we're working on making these work in comments)
 
 #### Usage:
 1. Type a shortcut
