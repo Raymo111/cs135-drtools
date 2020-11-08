@@ -33,13 +33,13 @@ There are 2 parts of this package that you can install. By following the steps b
 | ce       | check-error             |
 | df       | define function         |
 | d        | define                  |
-| dfs      | define structure        |
+| ds       | define structure        |
 | ms       | make structure          |
 | c        | cond with else          |
 | if       | if statement            |
 | con      | list in cons notation   |
 | li       | abbreviated list        |
-| ds       | display                 |
+| dsp      | display                 |
 | t        | true                    |
 | f        | false                   |
 | e        | empty                   |
