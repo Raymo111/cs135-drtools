@@ -51,6 +51,8 @@ There are 2 parts of this package that you can install. By following the steps b
 | pb       | 3-line "Part b" comment |
 | pc       | 3-line "Part c" comment |
 | pd       | 3-line "Part d" comment |
+| pe       | 3-line "Part e" comment |
+| pf       | 3-line "Part f" comment |
 | ppe      | Purpose and examples    |
 | ctr      | Contract                |
 | req      | Requires                |
