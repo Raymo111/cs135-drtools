@@ -13,8 +13,8 @@ DrRacket Tools for CS 135 course at UWaterloo
 
 ### Contributors
 - Creator and Maintainer: [Raymond Li](https://github.com/Raymo111) ([https://Raymond.Li](https://raymond.li))
-- Co-creator and Maintainer: [Kaustubh Prabhakar](https://github.com/SantaKaus) ([https://KaustubhPrabhakar.tech](https://kaustubhprabhakar.tech))
-- Contributor: [Thomas Park](https://github.com/ThomasPark20)
+- Co-creator: [Kaustubh Prabhakar](https://github.com/SantaKaus) ([https://KaustubhPrabhakar.tech](https://kaustubhprabhakar.tech))
+- Contributors: [Thomas Park](https://github.com/ThomasPark20), [Devon Mack](https://github.com/devonpmack), [Kaifee Haque](https://github.com/kaifee-haque)
 
 ## Installation
 There are 2 parts of this package that you can install. By following the steps below, you will get autocomplete and additional keybindings. To install the preferences, follow the installation section under [Racket Preferences](#installation-1). Default Racket keybindings will continue to work after installation.
