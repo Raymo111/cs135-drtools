@@ -37,7 +37,7 @@
     ("f"   "false" "")
     ("e"   "empty" "")
     ("ll"  ";;\n;; " "\n;;") ; semicolons can't be used
-    ("l"   ";;   " "")      ; (because treated as comment)
+    ("l"   ";;   " "")       ; (because treated as comment)
 
     ; custom design recipe:
     ("hdr" ";;
@@ -51,6 +51,8 @@
     ("pb" ";;\n;; Part b\n;;\n\n" "\n")
     ("pc" ";;\n;; Part c\n;;\n\n" "\n")
     ("pd" ";;\n;; Part d\n;;\n\n" "\n")
+    ("pe" ";;\n;; Part d\n;;\n\n" "\n")
+    ("pf" ";;\n;; Part d\n;;\n\n" "\n")
     ("ppe" ";; (" ") \n;; Examples:\n")
     ("ctr" ";; " ":  -> ")
     ("req" ";; Requires: " "")
