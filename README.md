@@ -33,11 +33,16 @@ There are 2 parts of this package that you can install. By following the steps b
 | ce       | check-error             |
 | df       | define function         |
 | d        | define                  |
+| ds       | define structure        |
+| m        | make structure          |
 | c        | cond with else          |
 | if       | if statement            |
-| ds       | displa                  |
+| con      | list in cons notation   |
+| li       | abbreviated list        |
+| dsp      | display                 |
 | t        | true                    |
 | f        | false                   |
+| e        | empty                   |
 | hdr      | file header             |
 | cmt      | comment                 |
 | l        | `;;   `                 |
