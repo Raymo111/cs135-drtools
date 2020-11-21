@@ -36,6 +36,8 @@ There are 2 parts of this package that you can install. By following the steps b
 | d        | define                  |
 | ds       | define structure        |
 | m        | make structure          |
+| λ        | lambda expression       |
+| lc       | local definition        |
 | c        | cond with else          |
 | if       | if statement            |
 | con      | list in cons notation   |
