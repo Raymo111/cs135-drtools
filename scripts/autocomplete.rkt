@@ -39,12 +39,45 @@
     ("ll"  ";;\n;; " "\n;;") ; semicolons can't be used
     ("l"   ";;   " "")       ; (because treated as comment)
 
+
+    ;Full Function Design Recipe
+("FunctionRecipe" ";;
+;; ***************************************************
+;;    Name (studentID)
+;;    CS 135 Fall 2021
+;;    Assignment " ", Question 
+;; ***************************************************
+;;
+
+
+;; (function x y) produces 
+;; 
+
+;; Examples:
+(check-expect (function x y) z)
+(check-expect (function x y) z)
+
+;; ____ :   __ -> __
+
+;; Requires: 
+
+
+(define (function x y)
+  )
+    
+    
+;; Tests:
+(check-expect (function x y) z)
+(check-expect (function x y) z)
+(check-expect (function x y) z)\n")
+
+
     ; custom design recipe:
     ("hdr" ";;
 ;; ***************************************************
 ;;    Name (studentID)
-;;    CS 135 Fall 2020
-;;    Assignment " ", Problem 
+;;    CS 135 Fall 2021
+;;    Assignment " ", Question 
 ;; ***************************************************
 ;;\n")
     ("pa" ";;\n;; Part a\n;;\n\n" "\n")
