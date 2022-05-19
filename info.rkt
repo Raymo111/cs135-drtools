@@ -5,7 +5,10 @@
 (define drracket-tool-icons '(#f))
 
 (define collection "cs135-drtools")
-(define deps '("base"))
+(define deps '("drracket-plugin-lib"
+               "gui-lib"
+               "quickscript"
+               "base"))
 (define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/cs135-drtools.scrbl" ())))
 (define pkg-desc "DrRacket Tools for CS 135 course at UWaterloo")
